@@ -1,0 +1,118 @@
+@font-face {
+    src: url("fonts/RoslindaleVariable[opsz\,slnt\,wdth\,wght]-Edu.woff2") format("woff2"),
+        url('fonts/RoslindaleVariable[opsz\,slnt\,wdth\,wght]-Edu.ttf') format('truetype');
+
+    font-family: 'Roslindale Variable';
+    font-style:  normal;
+    font-weight: normal;
+    }
+    /* *{
+      border: blue 3px dashed;  
+    }   */
+    body{
+    background-color: #0b3014;
+    background-image: url('green\ damask.jpg') ;
+    background-repeat: repeat;
+    background-size: 40%;
+    ;
+    /* overflow: hidden; */
+    font-family: 'Roslindale Variable';
+}
+
+/* how the page wrapper will appear on mobile */
+.page-wrapper{
+    width: min(100% - 3rem, 180ch);
+    margin-inline: auto;
+}
+/* how the page wrapper appears on desktop */
+
+@media only screen and (min-width:800px){
+.page-wrapper{
+display: grid;
+grid-gap: 25px;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+grid-template-areas: 
+    "h v"
+    "a a";
+}
+
+.history {
+grid-area: h;
+}
+
+.variations{
+grid-area: v;
+}
+
+.alphabet {
+grid-area: a;
+}
+}
+/* CSS for the footer */
+footer{
+    background-color: rgb(71, 32, 29);
+}
+
+/* variable font animation */
+h3{
+    color: rgb(255, 225, 172);
+    font-weight:20; 
+    text-align: center;
+    font-size: 5em;
+    animation: weightChange 7s infinite;
+}
+
+@keyframes weightChange {
+    0%, 100%{
+        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
+    }
+    50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" -13;
+    }
+    
+}
+/* variable font that changes on hover */
+.variable-font{
+    font-weight:1 ;
+    height:100vh;
+    font-size: 10em;
+    display:grid;
+    place-content: center;
+    margin: 0;
+    text-align: center;
+    font-variation-settings: "wght" 40, "wdth" 0, "XXXX" 1;
+    transition: 
+        font-weight 500ms,
+        font-variation-settings 3s;
+}
+
+.variable-font:hover{
+    font-weight:500 ;
+    height:100vh;
+    font-size: 7em;
+    display:grid;
+    place-content: center;
+    margin: 0;
+    text-align: center;
+    font-variation-settings: "wght" 120, "wdth" 0, "XXXX" 100;
+}
+
+h1{
+    font-size: large;
+    color: rgb(255, 225, 172);
+}
+.boxed {
+    padding: 35px;
+    color: rgb(247, 199, 167);
+    background-image: url('texture-seamless-wood-5.jpg');
+    background-size: 30%;
+    border: 10px ridge;
+    border-color: goldenrod;
+    font-size: 28px;
+    font-family: 'Roslindale Variable';
+
+}
+
+    
+  
+  

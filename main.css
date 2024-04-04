@@ -21,7 +21,7 @@
 
 /* how the page wrapper will appear on mobile */
 .page-wrapper{
-    width: min(100% - 3rem, 180ch);
+    width: min(100% - 3rem, 130ch);
     margin-inline: auto;
 }
 /* how the page wrapper appears on desktop */
@@ -65,7 +65,7 @@ h3{
 
 @keyframes weightChange {
     0%, 100%{
-        font-variation-settings: "opsz" 16, "wght" 200, "slnt" 0;
+        font-variation-settings: "opsz" 16, "wght" 200, "slnt" -4;
     }
     50%{font-variation-settings: "opsz" 16, "wght" 900, "slnt" -13;
     }
